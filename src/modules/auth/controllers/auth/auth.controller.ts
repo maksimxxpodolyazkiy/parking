@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { AuthService } from 'src/auth/services/auth/auth.service';
-import { UnverifiedUserDto } from 'src/user/dto/unverified-user.dto';
+import { AuthService } from 'src/modules/auth/services/auth/auth.service';
+import { UnverifiedUserDto } from 'src/modules/user/dto/unverified-user.dto';
 
 @Controller('auth')
 export class AuthController {

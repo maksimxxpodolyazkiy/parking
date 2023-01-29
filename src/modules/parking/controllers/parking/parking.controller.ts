@@ -7,9 +7,9 @@ import {
   Post,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
-import { LicenseDto } from 'src/parking/dto/license.dto';
-import { ParkingService } from 'src/parking/services/parking/parking.service';
+import { JwtAuthGuard } from 'src/modules/auth/jwt-auth.guard';
+import { LicenseDto } from 'src/modules/parking/dto/license.dto';
+import { ParkingService } from 'src/modules/parking/services/parking/parking.service';
 
 @Controller('parking')
 export class ParkingController {

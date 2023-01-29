@@ -3,11 +3,11 @@ import { JwtService } from '@nestjs/jwt';
 
 import * as bcryptjs from 'bcryptjs';
 import { catchError, from, map, Observable, of, switchMap } from 'rxjs';
-import { jwtConstants } from 'src/auth/constants/auth.constants';
-import { JwtMessage } from 'src/auth/dto/jwt-message.dto';
-import { UnverifiedUserDto } from 'src/user/dto/unverified-user.dto';
-import { UserDto } from 'src/user/dto/user.dto';
-import { UserService } from 'src/user/services/user.service';
+import { jwtConstants } from 'src/modules/auth/constants/auth.constants';
+import { JwtMessage } from 'src/modules/auth/dto/jwt-message.dto';
+import { UnverifiedUserDto } from 'src/modules/user/dto/unverified-user.dto';
+import { UserDto } from 'src/modules/user/dto/user.dto';
+import { UserService } from 'src/modules/user/services/user.service';
 
 @Injectable()
 export class AuthService {

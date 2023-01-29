@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { map, Observable, switchMap } from 'rxjs';
-import { ParkingSlotDto } from 'src/parking/dto/parking-slot.dto';
-import { SlotInfoDto } from 'src/parking/dto/slot-info.dto';
-import { removeColon } from 'src/parking/tools/remove-colon';
+import { ParkingSlotDto } from 'src/modules/parking/dto/parking-slot.dto';
+import { SlotInfoDto } from 'src/modules/parking/dto/slot-info.dto';
+import { removeColon } from 'src/modules/parking/tools/remove-colon';
 import { ParkingDataBaseService } from './parking-data-base.service';
 
 @Injectable()

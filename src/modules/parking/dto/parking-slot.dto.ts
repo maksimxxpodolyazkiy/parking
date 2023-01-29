@@ -3,3 +3,5 @@ export class ParkingSlotDto {
   slotNumber: number;
   isEmpty: boolean;
 }
+
+export class ParkingSlotCreateDto {}

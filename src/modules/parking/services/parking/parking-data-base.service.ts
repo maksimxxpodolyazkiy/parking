@@ -1,9 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { Observable, of } from 'rxjs';
-import { ParkingSlotDto } from 'src/parking/dto/parking-slot.dto';
+import { DataBase } from 'src/core/db/db';
+import { ParkingSlotDto } from 'src/modules/parking/dto/parking-slot.dto';
 
 @Injectable()
-export class ParkingDataBaseService {
+export class ParkingDataBaseService extends DataBase<ParkingSlotDto> {
   private data: ParkingSlotDto[];
 
   public setDefaultValues(size: number): void {
